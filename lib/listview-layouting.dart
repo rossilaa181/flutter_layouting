@@ -89,163 +89,60 @@ class _MyHomePageState extends State<MyHomePage> {
           Expanded(
             child: ListView(
               children: <Widget>[
-                Container(
-                  margin: EdgeInsets.only(bottom: 8),
-                  padding: EdgeInsets.all(1),
-                  color: Colors.green,
-                  child: Column(
-                    children: <Widget>[
-                      Row(
-                        children: <Widget>[
-                          Image.asset(
-                            'assets/images/img2.jpg',
-                            fit: BoxFit.contain,
-                            height: 115,
-                          ),
-                          Container(
-                            padding: EdgeInsets.only(left: 10),
-                            margin: EdgeInsets.all(1),
-                            color: Colors.white,
-                            height: 114,
-                            width: 183,
-                            alignment: Alignment.centerLeft,
-                            child: Text(
-                                'Pique Bilang Wasit Untungkan Madrid, Koeman Tepok Jidat'),
-                          )
-                        ],
-                      ),
-                      Container(
-                        padding: EdgeInsets.all(14),
-                        width: double.infinity,
-                        color: Colors.white,
-                        child: Text(
-                          'Barcelona Feb 13, 2021',
-                          style: TextStyle(
-                            fontSize: 16,
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                Container(
-                  margin: EdgeInsets.only(bottom: 8),
-                  padding: EdgeInsets.all(1),
-                  color: Colors.green,
-                  child: Column(
-                    children: <Widget>[
-                      Row(
-                        children: <Widget>[
-                          Image.asset(
-                            'assets/images/img2.jpg',
-                            fit: BoxFit.contain,
-                            height: 115,
-                          ),
-                          Container(
-                            padding: EdgeInsets.only(left: 10),
-                            margin: EdgeInsets.all(1),
-                            color: Colors.white,
-                            height: 114,
-                            width: 183,
-                            alignment: Alignment.centerLeft,
-                            child: Text(
-                                'Pique Bilang Wasit Untungkan Madrid, Koeman Tepok Jidat'),
-                          )
-                        ],
-                      ),
-                      Container(
-                        padding: EdgeInsets.all(14),
-                        width: double.infinity,
-                        color: Colors.white,
-                        child: Text(
-                          'Barcelona Feb 13, 2021',
-                          style: TextStyle(
-                            fontSize: 16,
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                Container(
-                  margin: EdgeInsets.only(bottom: 8),
-                  padding: EdgeInsets.all(1),
-                  color: Colors.green,
-                  child: Column(
-                    children: <Widget>[
-                      Row(
-                        children: <Widget>[
-                          Image.asset(
-                            'assets/images/img2.jpg',
-                            fit: BoxFit.contain,
-                            height: 115,
-                          ),
-                          Container(
-                            padding: EdgeInsets.only(left: 10),
-                            margin: EdgeInsets.all(1),
-                            color: Colors.white,
-                            height: 114,
-                            width: 183,
-                            alignment: Alignment.centerLeft,
-                            child: Text(
-                                'Pique Bilang Wasit Untungkan Madrid, Koeman Tepok Jidat'),
-                          )
-                        ],
-                      ),
-                      Container(
-                        padding: EdgeInsets.all(14),
-                        width: double.infinity,
-                        color: Colors.white,
-                        child: Text(
-                          'Barcelona Feb 13, 2021',
-                          style: TextStyle(
-                            fontSize: 16,
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                Container(
-                  margin: EdgeInsets.only(bottom: 8),
-                  padding: EdgeInsets.all(1),
-                  color: Colors.green,
-                  child: Column(
-                    children: <Widget>[
-                      Row(
-                        children: <Widget>[
-                          Image.asset(
-                            'assets/images/img2.jpg',
-                            fit: BoxFit.contain,
-                            height: 115,
-                          ),
-                          Container(
-                            padding: EdgeInsets.only(left: 10),
-                            margin: EdgeInsets.all(1),
-                            color: Colors.white,
-                            height: 114,
-                            width: 183,
-                            alignment: Alignment.centerLeft,
-                            child: Text(
-                                'Pique Bilang Wasit Untungkan Madrid, Koeman Tepok Jidat'),
-                          )
-                        ],
-                      ),
-                      Container(
-                        padding: EdgeInsets.all(14),
-                        width: double.infinity,
-                        color: Colors.white,
-                        child: Text(
-                          'Barcelona Feb 13, 2021',
-                          style: TextStyle(
-                            fontSize: 16,
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
+                listNews(),
+                listNews(),
+                listNews(),
+                listNews(),
               ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class listNews extends StatelessWidget {
+  const listNews({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: EdgeInsets.only(bottom: 8),
+      padding: EdgeInsets.all(1),
+      color: Colors.green,
+      child: Column(
+        children: <Widget>[
+          Row(
+            children: <Widget>[
+              Image.asset(
+                'assets/images/img2.jpg',
+                fit: BoxFit.contain,
+                height: 115,
+              ),
+              Container(
+                padding: EdgeInsets.only(left: 10),
+                margin: EdgeInsets.all(1),
+                color: Colors.white,
+                height: 114,
+                width: 183,
+                alignment: Alignment.centerLeft,
+                child: Text(
+                    'Pique Bilang Wasit Untungkan Madrid, Koeman Tepok Jidat'),
+              )
+            ],
+          ),
+          Container(
+            padding: EdgeInsets.all(14),
+            width: double.infinity,
+            color: Colors.white,
+            child: Text(
+              'Barcelona Feb 13, 2021',
+              style: TextStyle(
+                fontSize: 16,
+              ),
             ),
           ),
         ],
